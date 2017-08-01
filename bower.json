@@ -1,0 +1,21 @@
+{
+  "name": "bower-example",
+  "version": "0.0.0",
+  "authors": [
+    "author <anton.taratyhska@gmail.com>"
+  ],
+  "description": "test work",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "swiper": "^3.4.1"
+  } 
+}
