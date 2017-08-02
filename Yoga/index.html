@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yoga</title>
 
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <div class="header">
         <div class="container header_cont">
             <div class="nav">
-                <a class="nav_link">About us</a>
-                <a class="nav_link">Reservation</a>
-                <a class="nav_link">Gallery</a>
+                <a href="#aboutus" class="nav_link">About us</a>
+                <a href="#reservation" class="nav_link">Reservation</a>
+                <a href="#galleryid" class="nav_link">Gallery</a>
             </div>
             <div class="logo">
                 <figure class="logo_wrap"> 
@@ -22,23 +23,29 @@
                 </figure>
             </div>
             <div class="nav">
-                <a class="nav_link">Blog</a>
-                <a class="nav_link">Elements</a>
-                <a class="nav_link">Shop</a>
+                <a href="#blogid" class="nav_link">Blog</a>
+                <a href="#elements" class="nav_link">Elements</a>
+                <a href="#shopid" class="nav_link">Shop</a>
             </div>
         </div>
     </div>
     <div class="main">
-        <div class="first_cont">
+        <div class="first_cont" id="reservation">
             <div class="container flex_container flex_center">
                 <div class="col_ones">
-                    <div class="trial">
+                    <form class="trial">
                         <h3 class="trial_title">Trial Class</h3>
-                        <input class="input_style" placeholder="Enter your name" type="text">
-                        <input class="input_style" placeholder="Enter your phone" type="text">
-                        <input class="input_style" placeholder="Chose your class" type="text">
-                        <button class="but_blue">Try it</button>
-                    </div>
+                        <input class="input_style nameValid" required placeholder="Enter your name" type="text">
+                        <input class="input_style" required placeholder="Enter your phone" type="number">
+                        <select  class="input_style select" type="text">
+                            <option value="">Chose your class</option>
+                            <option value="">Chose your class2</option>
+                            <option value="">Chose your class3</option>
+                            <option value="">Chose your class4</option>
+                        </select>
+
+                        <button type="submit" class="but_blue">Try it</button>
+                    </form>
                     
                 </div>
                 <div class="col_ones">
@@ -93,33 +100,235 @@
             </div>
         </div>
 
-        <div class="three_cont">
-            <div class="cont_prev">
+        <div class="three_cont" id="galleryid">
+            <a href="#" class="cont_prev">
                 <img class="image_prev" src="images/cont-1.jpg" alt="">
-            </div>
-            <div class="cont_prev">
+            </a>
+            <a href="#" class="cont_prev">
                 <img class="image_prev" src="images/cont-2.jpg" alt="">
-            </div>
-            <div class="cont_prev">
+            </a>
+            <a href="#" class="cont_prev">
                 <img class="image_prev" src="images/cont-3.jpg" alt="">
-            </div>
-            <div class="cont_prev">
+            </a>
+            <a href="#" class="cont_prev">
                 <img class="image_prev" src="images/cont-4.jpg" alt="">
-            </div>
-            <div class="cont_prev">
+            </a>
+            <a href="#" class="cont_prev">
                 <img class="image_prev" src="images/cont-5.jpg" alt="">
-            </div>
-            <div class="cont_prev">
+            </a>
+            <a href="#" class="cont_prev">
                 <img class="image_prev" src="images/cont-6.jpg" alt="">
-            </div>
-            <div class="cont_prev">
+            </a>
+            <a href="#" class="cont_prev">
                 <img class="image_prev" src="images/cont-7.jpg" alt="">
-            </div>
-            <div class="cont_prev">
+            </a>
+            <a href="#" class="cont_prev">
                 <img class="image_prev" src="images/cont-8.jpg" alt="">
+            </a>
+        </div> 
+        <div class="four_cont" id="aboutus">
+            <div class="flex_container container">
+                <div class="col_ones">
+                    <h3 class="title_about">About us</h3>
+                    <p class="text_about">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor it in lorei voluptate velit esse cillum dolore eu fugiat nulla pariatur lorem ispum loting sokui.
+                    </p>
+                </div>
+                <div class="col_ones col_slide">
+                    <div class=" swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img class="slide_img" src="images/slide-img.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="slide_img" src="images/slide-img.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="slide_img" src="images/slide-img.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div> 
+            </div>
+        </div>
+        <div class="five_count" id="elements">
+            <div class="flex_container container wraper">
+                <div class="col_prev">
+                    <img class="img_prev" src="images/info-1.png" alt="">
+                    <h3 class="title_prev">IMPROVED OVERALL<br>
+                    HEALTH</h3>
+                    <p class="text_prev">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                </div>
+                <div class="col_prev">
+                    <img class="img_prev" src="images/info-2.png" alt="">
+                    <h3 class="title_prev">INCREASED<br>
+                    CONCENTRATION</h3>
+                    <p class="text_prev">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                </div>
+                <div class="col_prev">
+                    <img class="img_prev" src="images/info-3.png" alt="">
+                    <h3 class="title_prev">BLANCE<br>
+                    YOUR MIND</h3>
+                    <p class="text_prev">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                </div>
+                <div class="col_prev">
+                    <img class="img_prev" src="images/info-4.png" alt="">
+                    <h3 class="title_prev">SLEEP<br>
+                    BETTER</h3>
+                    <p class="text_prev">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                </div>
+                <div class="col_prev">
+                    <img class="img_prev" src="images/info-5.png" alt="">
+                    <h3 class="title_prev">WEIGHT LOSS</h3>
+                    <p class="text_prev">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                </div>
+                <div class="col_prev">
+                    <img class="img_prev" src="images/info-6.png" alt="">
+                    <h3 class="title_prev">STRENGTHENS<br>
+                    YOUR BONES</h3>
+                    <p class="text_prev">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                </div>
+                <div class="col_prev">
+                    <img class="img_prev" src="images/info-7.png" alt="">
+                    <h3 class="title_prev">INCREASED<br>
+                    FLEXIBILITY</h3>
+                    <p class="text_prev">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                </div>
+                <div class="col_prev">
+                    <img class="img_prev" src="images/info-8.png" alt="">
+                    <h3 class="title_prev">LOWER BLOOD<br>
+                    PRESSURE</h3>
+                    <p class="text_prev">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                </div>
+            </div>
+        </div>
+        <div class="blue_bg" id="shopid">
+            <div class="six_cont flex_container container">
+                <div class="buy_now topHover">
+                    <div class="head_buy"><h3 class="cost_buy"><span class="dollor">$</span>49 <span class="in_month">/ month</span></h3></div>
+                    <span class="info_buy">ENTRY DATE: MON – FRI</span>
+                    <span class="info_buy">ENTRY TIME: 8A.M – 8P.M</span>
+                    <span class="info_buy">NUTRITION ADVICER: NO</span>
+                    <button class="buy_but hoverToTop">Buy now</button>
+                </div>
+                <div class="buy_now topHover">
+                    <div class="head_buy"><h3 class="cost_buy"><span class="dollor">$</span>69 <span class="in_month">/ month</span></h3></div>
+                    <span class="info_buy">ENTRY DATE: MON – FRI</span>
+                    <span class="info_buy">ENTRY TIME: 8A.M – 8P.M</span>
+                    <span class="info_buy">NUTRITION ADVICER: YES</span>
+                    <button class="buy_but hoverToTop">Buy now</button>
+                </div>
+                <div class="buy_now topHover">
+                     <div class="head_buy"><h3 class="cost_buy"><span class="dollor">$</span>99 <span class="in_month">/ month</span></h3></div>
+                    <span class="info_buy">ENTRY DATE: MON – SUN</span>
+                    <span class="info_buy">ENTRY TIME: 8A.M – 8P.M</span>
+                    <span class="info_buy">NUTRITION ADVICER: YES</span>
+                    <button class="buy_but hoverToTop">Buy now</button>
+                </div>
+            </div>
+            <div class="seven_cont container" id="blogid">
+                <div class="one_comment">
+                    <img class="comment_img" src="images/autor.png" alt="">
+                    <div class="comment">
+                        <div class="decor">
+                            <span class="dec"></span>
+                            <span class="line_dec"></span>
+                        </div>
+                        <div class="comment_text">
+                            <p class="text_com">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <div class="autor">Trainer</div>
+                            <div class="autor_name">Laura Shepard</div>
+                        </div>
+                        <div class="decor">
+                            <span class="dec inv_dec"></span>
+                        </div>
+                    </div>
+                    <div class="rad">
+                        <span class="one_r"></span>
+                        <span class="one_r active"></span>
+                        <span class="one_r"></span>
+                        <span class="one_r"></span>
+                    </div>
+                </div>
+                <div class="change_autor">
+                    <div class="arrrow left_arrow">
+                        <img class="arrow_img" src="images/arrow.png" alt="">
+                    </div>
+                    <div class="autor_cont">
+                        <img src="images/autor_img.png" class="autor_img">
+                        <div class="wrap_autor">
+                            <p class="autor_title">Sara Taylor</p>
+                            <p class="autor_status">Trainer</p>
+                        </div>
+                    </div>
+                    <div class="arrrow right_arrow">
+                        <img class="arrow_img" src="images/arrow.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="container flex_container">
+            <div class="cont_fot_one">
+                <div class="title_fot">About</div>
+                <p class="text_foot">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad m inim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="soc_links">
+                    <a class="soc_icons" href="#"><img src="images/soc_ico-5.png" alt=""></a>
+                    <a class="soc_icons" href="#"><img src="images/soc_ico-4.png" alt=""></a>
+                    <a class="soc_icons" href="#"><img src="images/soc_ico-3.png" alt=""></a>
+                    <a class="soc_icons" href="#"><img src="images/soc_ico-2.png" alt=""></a>
+                    <a class="soc_icons" href="#"><img src="images/soc_ico-1.png" alt=""></a>
+                </div>
+            </div>
+            <div class="cont_fot_two">
+                <div class="title_fot">CONTACT US</div>
+                <div class="link_wrap">
+                    <div class="link_cont">
+                        <img src="images/icon-1.png" alt="">
+                        <div class="cont_link">
+                            <p>5419 Joseph Mountains</p>
+                            <p class="padd_b">Apt. 716</p>
+                        </div>
+                    </div>
+                    <div class="link_cont">
+                        <img src="images/icon-3.png" alt="">
+                        <div class="cont_link">
+                            <p>joga.info@example.com</p>
+                        </div>
+                    </div>
+                    <div class="link_cont">
+                        <img src="images/icon-2.png" alt="">
+                        <div class="cont_link">
+                            <p>+1 234 567 89</p>
+                            <p>+1 234 678 90</p>
+                        </div>
+                    </div>
+                    <div class="link_cont">
+                        <img src="images/icon-4.png" alt="">
+                        <div class="cont_link">
+                            <p>www.example.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="last_line">
+        <p>Copyright  ©  2016-2017 Yoga classes</p>
+    </div>
 </body>
+    <script src="js/jquery-2.2.4.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            speed: 400,
+            spaceBetween: 100,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev'
+        });  
+    </script>
 </html>
